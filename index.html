@@ -78,17 +78,17 @@ later</p>
         </section>
 
         <section>
-          <h2>Distributed version control systems</h2>
-
-          <p>Clients don’t just check out the latest snapshot of the ﬁles: they fully mirror the repository</p>
-        </section>
-
-        <section>
           <h2>Pull from one another</h2>
 
           <pre><code contenteditable>
             git pull \\<your-ip>\shared_directory\<your-repo>
           </code></pre>
+        </section>
+
+        <section>
+          <h2>Distributed version control systems</h2>
+
+          <p>Clients don’t just check out the latest snapshot of the ﬁles: they fully mirror the repository</p>
         </section>
 
         <section>
@@ -178,6 +178,7 @@ $ git config --global core.editor emacs
           <h3>Your diffing tool</h3>
           <pre><code contenteditable>
 $ git config --global merge.tool vimdiff
+$ git config --global diff.tool meld
           </code></pre>
         </section>
 
