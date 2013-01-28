@@ -137,17 +137,14 @@ information is needed from another computer on your network.</p>
           <h2>Git has integrity</h2>
           <p>Everything in Git is check-summed before it is stored and is then referred to by that
 checksum</p>
-          <p>The mechanism that Git uses for this checksumming is called a SHA–1 hash. This
-is a 40-character string composed of hexadecimal characters (09 and af) and calculated
-based on the contents of a ﬁle or directory structure in Git. A SHA–1 hash looks
-something like this:</p>
+          <p>The mechanism that Git uses for this checksumming is called a SHA–1 hash and it looks like this:</p>
           <p>24b9da6552252987aa493b52f8696cd6d3b00373</p>
         </section>
 
         <section>
           <h2>Git Generally Only Adds Data</h2>
           <p>When you do actions in Git, nearly all of them only add data to the Git database. It
-is very difﬁcult to get the system to do anything that is not undoable or to make it
+is very difficult to get the system to do anything that is not undoable or to make it
 erase data in any way.</p>
         </section>
 
@@ -276,6 +273,8 @@ $ git status
 # modified: benchmarks.rb
 #
           </code></pre>
+
+          <p>When moving, might be a good idea to separate that commit from others</p>
         </section>
 
         <section>
