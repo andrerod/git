@@ -1,2 +1,2 @@
-# GIT Presentation
+# GIT Presentation alternative
 
