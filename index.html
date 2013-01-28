@@ -84,6 +84,14 @@ later</p>
         </section>
 
         <section>
+          <h2>Pull from one another</h2>
+
+          <pre><code contenteditable>
+            git pull \\<your-ip>\shared_directory\<your-repo>
+          </code></pre>
+        </section>
+
+        <section>
           <h2>Goals</h2>
           <ul>
             <li>Speed</li>
@@ -408,6 +416,32 @@ $ git reset <commitId>
           </code></pre>
         </section>
 
+        <section>
+          <h2>WIP</h2>
+          <p>Git stash can be used to store WIP without commiting it</p>
+          <pre><code contenteditable>
+$ git stash
+Saved working directory and index state \
+  "WIP on master: 049d078 added the index file"
+HEAD is now at 049d078 added the index file
+(To restore them type "git stash apply")
+$ git status
+# On branch master
+nothing to commit (working directory clean)
+$ git stash list
+stash@{0}: WIP on master: 049d078 added the index file
+stash@{1}: WIP on master: c264051... Revert "added file_size"
+stash@{2}: WIP on master: 21d80a5... added number to log
+$ git stash apply
+# On branch master
+# Changes not staged for commit:
+#   (use "git add <file>..." to update what will be committed)
+#
+#      modified:   index.html
+#      modified:   lib/simplegit.rb
+#
+          </code></pre>
+        </section>
 
         <section>
           <h2>Github</h2>
@@ -450,7 +484,6 @@ $ git reset <commitId>
           <p>We use labels for both priorities and status</p>
           <img class="image" src="images/issues.png" />
         </section>
-
 
         <section>
           <h2>References</h2>
